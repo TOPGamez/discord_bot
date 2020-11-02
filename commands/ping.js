@@ -3,7 +3,13 @@ module.exports = {
     description = 'sends pong!',
     execute(message, args){
 
-        message.channel.send('pong!')
+        if(member.message.roles.cache.has('771600019698352138')){
+            message.channel.send('pong!');
+        }
+        
+        else{
+            message.channel.send('Nice try!');
+        }
 
     }
 }
